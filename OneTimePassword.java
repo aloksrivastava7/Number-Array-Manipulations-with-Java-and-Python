@@ -3,7 +3,7 @@ import java.io.*;
 /**
  * Create a program in Java to create OTP (One-Time Passwords) for a customer service.
  */
-class LabTask5 {
+class OneTimePassword {
     private static final byte RANDOM_NUMBER_MAX_LIMIT = 10;
     /**
      * This method generates an OTP for the customer depending upon the number of digits.
@@ -55,7 +55,7 @@ class LabTask5 {
     }
     //Main method()
     public static void main (String args[]){
-        LabTask5 obj = new LabTask5();
+        OneTimePassword obj = new OneTimePassword();
         int generatedOTP = generateOTP();
         System.out.print("Your OTP is : ");
         printOTP(generatedOTP);
